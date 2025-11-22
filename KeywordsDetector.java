@@ -1,4 +1,5 @@
-public class KeywordsDetector {
+public class KeywordsDetector 
+{
     public static void main(String[] args) {
         String[] sentences = {
             "Our product will transform the market",
@@ -44,10 +45,12 @@ public class KeywordsDetector {
             }
             return false;
         }
+    
 
     // Iterates through all the sentences.
     // If a sentence contains one or more of the kewords, prints it.
-    public static void detectAndPrint(String[] sentences, String[] keywords) {
+    public static void detectAndPrint(String[] sentences, String[] keywords)
+    {
         // Replace this comment with your code
         String[] NewSentences = new String[sentences.length];
         String[] NewKeywords = new String [keywords.length];

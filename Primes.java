@@ -7,7 +7,6 @@ public class Primes {
         for (int i = 0; i < prime.length; i++) prime[i] = true;
         prime[0] = false;
         prime[1] = false;
-        prime[2] = true;
         for(int p = 2; p*p <=n; p++)
         {
             if(prime[p] == true)
