@@ -77,7 +77,7 @@ public class KeywordsDetector {
             {
                     for(int k = 0; k < keywords.length; k++) // runs on words
                     {
-                        if(contains(NewSentences[i], keywords[k]))
+                        if(contains(NewSentences[i], NewKeywords[k]))
                             {
                                 System.out.println(sentences[i]);
                                 break;

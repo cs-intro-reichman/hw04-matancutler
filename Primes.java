@@ -17,7 +17,14 @@ public class Primes {
                     prime[i] = false;
             }
         }
-        for (int i = 0; i < prime.length; i++) if(prime[i] == true) counter++;
+        for (int i = 0; i < prime.length; i++) 
+        {
+            if(prime[i] == true)
+            {
+                System.out.println(i);
+                counter++;
+            }
+        }
         sum = ((double) counter/n)*100;
         System.out.println("There are " + counter + " primes between 2 and " + n + " (" + (int) sum +"% are primes)");
     }
