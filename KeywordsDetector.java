@@ -74,17 +74,15 @@ public class KeywordsDetector {
             } 
         }
         for(int i = 0; i < NewSentences.length; i ++) //runs on the sentences
+        {
+            for(int k = 0; k < keywords.length; k++) // runs on words
             {
-                    for(int k = 0; k < keywords.length; k++) // runs on words
-                    {
-                        if(contains(NewSentences[i], NewKeywords[k]))
-                            {
-                                System.out.println(sentences[i]);
-                                break;
-                            } 
-                    }
+                if(contains(NewSentences[i], NewKeywords[k]))
+                {
+                    System.out.println(sentences[i]);
+                    break;
+                } 
             }
-        //for(int i = 0; i < NewSentences.length; i ++) System.out.println(NewSentences[i]);
-        
+        }        
     }
 }
