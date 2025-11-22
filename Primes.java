@@ -3,7 +3,6 @@ public class Primes {
         // Replace this statement with your code
         int n = Integer.parseInt(args[0]);
         boolean [] prime = new boolean [n + 1];
-        double sum = 0;
         int counter = 0;
         for (int i = 0; i < prime.length; i++) prime[i] = true;
         prime[0] = false;
@@ -18,7 +17,7 @@ public class Primes {
             }
         }
         System.out.println("Prime numbers up to " + n + ":");
-        for (int i = 0; i < prime.length; i++) 
+        for (int i = 2; i <= n; i++) 
         {
             if(prime[i] == true)
             {
@@ -26,7 +25,8 @@ public class Primes {
                 counter++;
             }
         }
-        sum = ((double) counter/n)*100;
-        System.out.println("There are " + counter + " primes between 2 and " + n + " (" + (int) sum +"% are primes)");
+        double sum = ((double) counter/n)*100;
+        int Rsum = (int) sum;
+        System.out.println("There are " + counter + " primes between 2 and " + n + " (" + Rsum +"% are primes)");
     }
 }
